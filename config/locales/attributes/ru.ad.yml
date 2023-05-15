@@ -1,0 +1,13 @@
+ru:
+  activerecord:
+    attributes:
+      competence:
+        id: Id
+        title: Название
+        description: Описание
+        city: Название города
+        user_id: ID Пользователя
+        lat: Широта
+        lon: Долгота
+        created_at: Дата создания
+        updated_at: Дата обновление

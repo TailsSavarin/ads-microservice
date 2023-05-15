@@ -1,0 +1,38 @@
+swagger.yaml:
+  openapi: 3.0.1
+  info:
+    title: API
+    version: 1.0
+    description: Описание запросов
+  paths: { }
+  schemes:
+    - http
+  servers:
+    - url: http://localhost:{port}
+      description: Локальный сервер разработки
+      variables:
+        port:
+          default: 3000
+          description: Порт
+  components:
+    schemas:
+      ads:
+        type: object
+        description: Объявления
+        properties:
+          title:
+            type: string
+            description: Название
+            required: true
+          description:
+            type: string
+            description: Описание
+            required: true
+          city:
+            type: string
+            description: Название города
+            required: true
+          user_id:
+            type: integer
+            description: ID Пользователя
+            required: true

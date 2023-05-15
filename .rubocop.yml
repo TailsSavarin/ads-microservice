@@ -1,0 +1,32 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - rubocop-performance
+
+inherit_from:
+  - .rubocop/rubocop_rails.yml
+  - .rubocop/rubocop_rspec.yml
+
+Performance:
+  Enabled: true
+
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  TargetRubyVersion: 3.2.2
+  Exclude:
+    - 'bin/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Max: 35
+  Exclude:
+    - 'config/environments/**/*'
+    - 'config/routes.rb'
+    - 'config/routes/**/*'

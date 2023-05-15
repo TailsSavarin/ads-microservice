@@ -1,0 +1,8 @@
+require:
+  - rubocop-rspec
+
+RSpec:
+  Enabled: true
+
+RSpec/ContextWording:
+  Enabled: false
